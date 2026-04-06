@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html lang="ja"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1a1a5b",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#13131f",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<title>さくら行政書士事務所 - 建設業許可サポート</title>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 w-full bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-primary/10 px-4 md:px-10 lg:px-40 py-3 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="size-8 flex items-center justify-center bg-primary text-white rounded-lg">
+<span class="material-symbols-outlined text-2xl">account_balance</span>
+</div>
+<h2 class="text-primary dark:text-slate-100 text-lg font-bold leading-tight tracking-tight">さくら行政書士事務所</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-primary dark:text-white text-sm font-bold border-b-2 border-primary" href="#">トップページ</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="../_2/code.html">事務所概要・代表プロフィール</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="../_1/code.html">料金案内</a>
+<a class="flex items-center gap-1.5 text-primary dark:text-slate-200 font-bold text-sm hover:underline" href="tel:048-***-****">
+<span class="material-symbols-outlined text-lg">call</span>048-***-****
+</a>
+<a class="bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-lg text-sm font-bold transition-all shadow-sm" href="../_2/code.html#contact">無料相談</a>
+</nav>
+</header>
+<main class="flex-1">
+<!-- Hero Section -->
+<section class="relative min-h-[600px] flex items-center overflow-hidden" style="background-image: url('https://lh3.googleusercontent.com/aida/ADBb0ugCGk_StGSXlSuDcweq4HD41DJ7wg0Zi_87YHJqT6HDclLdZDiuW-FGJyIMYtc9hiqu89gmXccn79ReAIpr4Yjt5Diy448kXF3iiqmT0k-s_hXDyA5LL3dVaFTS09VIEM413u9zOFp__NJsdgVCMcRFXb8f2HNGXb21OZ40zdYRKPQq9Zy3_KLiKn-jyvyg9QTGlNmvnSYAdeHKGg06_7xxKEktJFegGM1DGq3DpC0W4tYaNSq-M5SKHNmIlzm2k6mmj3Np2D43ZQ'); background-size: 75%; background-position: center center; background-repeat: no-repeat; background-color: #e8e8ec;">
+<div class="flex flex-col gap-10 lg:flex-row lg:items-center max-w-[1200px] mx-auto w-full z-10 px-4 md:px-10 lg:px-20 py-8 md:py-12 lg:py-16">
+<div class="flex-1 flex flex-col gap-8 order-2 max-w-lg ml-auto" style="margin-right: 100px;">
+<div class="flex flex-col gap-4">
+<div class="flex flex-wrap gap-2">
+<span class="inline-block bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full w-fit">建設業許可 専門</span>
+<span class="inline-block bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full w-fit">許可取得300件以上</span>
+</div>
+<h1 class="text-slate-900 dark:text-white text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight" style="text-shadow: 0 2px 8px rgba(255,255,255,0.9);">
+現場を知る行政書士が、<span class="text-primary dark:text-slate-300">建設業許可</span>を迅速・確実に。
+</h1>
+<p class="text-slate-600 dark:text-slate-400 text-lg md:text-xl leading-relaxed max-w-2xl">
+                                元現場監督（経験10年）の代表 鈴木誠が、現場の言葉で、御社の許可申請をプロデュースします。
+                            </p>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-white h-14 px-8 rounded-xl font-bold text-lg hover:shadow-lg transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">mail</span>
+                                無料相談・お問い合わせ
+                            </button>
+<div class="flex items-center gap-4 px-4 py-2 bg-white dark:bg-slate-800 rounded-xl border border-primary/10">
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-[10px] font-bold border-2 border-white">0%</div>
+</div>
+<span class="text-sm font-bold text-slate-700 dark:text-slate-300">書類不備・差し戻しゼロ継続中</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Indicators Banner -->
+<div class="bg-primary text-white py-6 overflow-hidden">
+<div class="max-w-[1200px] mx-auto px-4 flex flex-wrap justify-around gap-8">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-3xl">verified</span>
+<span class="font-bold tracking-wider text-sm">書類不備ゼロ</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-3xl">bolt</span>
+<span class="font-bold tracking-wider text-sm">スピード納品</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-3xl">support_agent</span>
+<span class="font-bold tracking-wider text-sm">24時間以内返信</span>
+</div>
+</div>
+</div>
+<!-- Strengths Section -->
+<section class="py-20 bg-white dark:bg-slate-900/50" id="strengths">
+<div class="max-w-[1200px] mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-primary dark:text-slate-100 text-3xl md:text-4xl font-black mb-4">4つの大きな強み</h2>
+<p class="text-slate-600 dark:text-slate-400 text-lg">現場経験があるからこそできる、建設会社様に寄り添ったサポート体制。</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="bg-background-light dark:bg-slate-800 p-8 rounded-2xl border border-primary/5 hover:border-primary/20 transition-all group">
+<div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary dark:text-slate-100 mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">engineering</span>
+</div>
+<h3 class="text-xl font-bold mb-3">現場経験10年の専門性</h3>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed text-sm">元現場監督なので図面や現場用語も熟知。建設業特有の事情を汲み取った書類作成を行います。</p>
+</div>
+<div class="bg-background-light dark:bg-slate-800 p-8 rounded-2xl border border-primary/5 hover:border-primary/20 transition-all group">
+<div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary dark:text-slate-100 mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">history_edu</span>
+</div>
+<h3 class="text-xl font-bold mb-3">更新・決算報告の継続支援</h3>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed text-sm">許可取得はスタート。その後の毎年の決算報告や5年ごとの更新まで、期限管理を含め一貫支援。</p>
+</div>
+<div class="bg-background-light dark:bg-slate-800 p-8 rounded-2xl border border-primary/5 hover:border-primary/20 transition-all group">
+<div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary dark:text-slate-100 mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">shutter_speed</span>
+</div>
+<h3 class="text-xl font-bold mb-3">24時間以内の返信</h3>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed text-sm">お急ぎの案件も安心。メール、LINE、電話、いかなるチャットツールでも24時間以内にレスポンス。</p>
+</div>
+<div class="bg-background-light dark:bg-slate-800 p-8 rounded-2xl border border-primary/5 hover:border-primary/20 transition-all group">
+<div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary dark:text-slate-100 mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">laptop_mac</span>
+</div>
+<h3 class="text-xl font-bold mb-3">全国フルリモート対応</h3>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed text-sm">Zoomやクラウド署名を活用。来所・対面不要で、多忙な経営者様の時間を奪わずに手続きが完了します。</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Service Overview -->
+<section class="py-20 bg-background-light dark:bg-background-dark" id="services">
+<div class="max-w-[1200px] mx-auto px-4">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+<div>
+<h2 class="text-primary dark:text-slate-100 text-3xl md:text-4xl font-black mb-4">サービス内容</h2>
+<p class="text-slate-600 dark:text-slate-400 text-lg">御社の事業成長に合わせた最適なサポートプランをご提案します。</p>
+</div>
+<a class="text-primary font-bold flex items-center gap-2 hover:underline" href="#">
+                            詳細な料金表を見る <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="flex flex-col bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow border border-primary/5">
+<div class="aspect-video bg-slate-200" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBJnt78uHSMp0skYLcnt6Hi5j00fG7wypsyktpKoqN_AEY24sWSOwiwN6RqqCX5tTG-mgI-JsFC49MllIYAY2R-ny9JCkP9pQTwISDkQE_hNWtxJTPC4260mkoSqPYbJsrYeNALghy9ByyrEmKBYi51-vsLYif9odFkBYIBmFou26_EsRRZAhJ7gW745JVqnKTJLB3LRveQkUOg_9NTYbLHFIAKn7SADULuN7D2HPlkjwM_U4WzhwU2rFrDNykcFb5Bszj4MoaN-Zo"); background-size: cover; background-position: center;'></div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-xl font-bold">新規許可申請</h3>
+<span class="bg-primary/5 text-primary text-sm font-bold px-2 py-1 rounded">110,000円〜</span>
+</div>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">要件診断から営業所写真の撮影アドバイス、膨大な書類作成まで全て丸投げOK。確実に許可取得へ導きます。</p>
+<ul class="space-y-2 text-sm font-medium text-slate-700 dark:text-slate-300">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> 知事許可・大臣許可</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> 一般・特定</li>
+</ul>
+</div>
+</div>
+<div class="flex flex-col bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow border border-primary/5">
+<div class="aspect-video bg-slate-200" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBkA6NN3U-KInOgQYNIf54wQ2zd5NKdP1MEwQMDM-cfXVRM6RZ6LfOaZt8bwVgoOpcV4z3e2Yo6q-jhlLsAIKhSSaT5hLOIi-be9GIiKdK9yJPf_OKM1VuTyuvKlX_9d8NJok00OwyZvZBjpswXAOJ5oHitxLLxf4uukT0flSJo4TODvxcA_O-9Y2DEjdCeKI8tF3PZQAr_Kj9ph4XZuI3DdJePfcQfLgUskfK7KGDCNcnpNo_ESWRQkCLuSIP6qWEFwN9gq35sbFs"); background-size: cover; background-position: center;'></div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-xl font-bold">更新・業種追加</h3>
+<span class="bg-primary/5 text-primary text-sm font-bold px-2 py-1 rounded">55,000円〜</span>
+</div>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">5年ごとの更新はうっかり忘れが命取り。期限管理を当事務所で行い、抜け漏れなく申請を行います。</p>
+<ul class="space-y-2 text-sm font-medium text-slate-700 dark:text-slate-300">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> 許可有効期限の管理</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> 決算変更届（毎年）</li>
+</ul>
+</div>
+</div>
+<div class="flex flex-col bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow border border-primary/5">
+<div class="aspect-video bg-slate-200" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBdgZe_Z_2j3AB8xfBWoI-qorMR1rV1Lf3JcT0RDOa98agdG2nptXblqAkvRnKlXqSDgmuc9W86_mnF9yz0xIXnUdsLocjGTVAaaM2TDpXZFnUelCx52ZF4812FQBxAu4fYllOxjUYeGSZKOfr31H8tSSCXHI0vr0XrjtXwAH4dJYCiIoD8Ddl1a9NxUgT5XJq6q4BM3FhhfFSMIqCeRvmBFL5h2cOGicnKzaPAQY4HreWnnCkqof9yX020uTqWTW3-Yiz7T83KO1o"); background-size: cover; background-position: center;'></div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-xl font-bold">経営事項審査</h3>
+<span class="bg-primary/5 text-primary text-sm font-bold px-2 py-1 rounded">88,000円〜</span>
+</div>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">公共工事の入札参加に必要な経審。点数アップのシミュレーションと、複雑な評価手続きを代行します。</p>
+<ul class="space-y-2 text-sm font-medium text-slate-700 dark:text-slate-300">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> 経営状況分析</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg text-primary text-lg">check_circle</span> 点数シミュレーション</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-20 bg-white dark:bg-slate-900/50" id="testimonials">
+<div class="max-w-[1200px] mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-primary dark:text-slate-100 text-3xl md:text-4xl font-black mb-4">お客様の声</h2>
+<p class="text-slate-600 dark:text-slate-400 text-lg">実際にサポートさせていただいた建設業者様からのご感想です。</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-background-light dark:bg-slate-800 p-8 rounded-2xl border border-primary/5">
+<div class="flex text-orange-400 mb-4">
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+</div>
+<p class="text-slate-700 dark:text-slate-300 italic mb-6">「現場監督出身ということで、図面の説明をする手間が省けて非常に助かりました。専門用語がそのまま通じるのは、忙しい身としては本当にありがたいです。」</p>
+<div class="flex items-center gap-4">
+<img src="建築2.png" class="w-[100px] h-[100px] rounded-xl object-cover flex-shrink-0"/>
+<div>
+<p class="font-bold text-sm">A工務店 代表取締役様</p>
+<p class="text-xs text-slate-500">（東京都・大工工事業）</p>
+</div>
+</div>
+</div>
+<div class="bg-background-light dark:bg-slate-800 p-8 rounded-2xl border border-primary/5">
+<div class="flex text-orange-400 mb-4">
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+</div>
+<p class="text-slate-700 dark:text-slate-300 italic mb-6">「許可の更新期限が迫っていたのですが、迅速な対応で無事に継続できました。決算変更届の期限管理まで任せられるので、今は本業に専念できています。」</p>
+<div class="flex items-center gap-4">
+<img src="土木2.png" class="w-[100px] h-[100px] rounded-xl object-cover flex-shrink-0"/>
+<div>
+<p class="font-bold text-sm">株式会社B設備 様</p>
+<p class="text-xs text-slate-500">（埼玉県・管工事業）</p>
+</div>
+</div>
+</div>
+<div class="bg-background-light dark:bg-slate-800 p-8 rounded-2xl border border-primary/5">
+<div class="flex text-orange-400 mb-4">
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+</div>
+<p class="text-slate-700 dark:text-slate-300 italic mb-6">「経審の点数アップについて、具体的なアドバイスをいただけたのが収穫でした。公共工事の受注に向けて、心強いパートナーができたと感じています。」</p>
+<div class="flex items-center gap-4">
+<img src="設備2.png" class="w-[100px] h-[100px] rounded-xl object-cover flex-shrink-0"/>
+<div>
+<p class="font-bold text-sm">C土木興業株式会社 様</p>
+<p class="text-xs text-slate-500">（千葉県・土木工事業）</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Profile Section -->
+<section class="py-20 bg-white dark:bg-slate-900/30" id="profile">
+<div class="max-w-[1000px] mx-auto px-4">
+<div class="flex flex-col md:flex-row gap-12 items-center">
+<div class="w-full md:w-1/3">
+<div class="relative">
+<div class="absolute inset-0 bg-primary rotate-3 rounded-2xl -z-10"></div>
+<div class="w-full aspect-square rounded-2xl overflow-hidden grayscale hover:grayscale-0 transition-all" style='background-image: url("suzuki.png"); background-size: cover; background-position: center;'></div>
+</div>
+</div>
+<div class="w-full md:w-2/3">
+<h4 class="text-primary font-bold mb-2">代表行政書士</h4>
+<h2 class="text-3xl font-black mb-6">鈴木 誠</h2>
+<p class="text-slate-700 dark:text-slate-300 leading-relaxed mb-6">
+                                大学卒業後、大手ゼネコンに現場監督として10年間勤務。数多くの施工現場を管理する中で、建設会社における許可維持の大切さと手続きの煩雑さを痛感しました。<br/><br/>
+                                「現場に負担をかけない許可申請」をモットーに独立。現場用語がそのまま通じる行政書士として、経営者様と同じ目線で対話することを大切にしています。
+                            </p>
+<div class="grid grid-cols-2 gap-4">
+<div class="border-l-2 border-primary pl-4">
+<p class="text-xs text-slate-500">登録番号</p>
+<p class="font-bold">第22000000号</p>
+</div>
+<div class="border-l-2 border-primary pl-4">
+<p class="text-xs text-slate-500">実務経験</p>
+<p class="font-bold">現場経験 10年</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-slate-900 text-slate-400 py-12 px-6 md:px-20 border-t border-slate-800">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-8">
+<div>
+<div class="flex items-center gap-4 text-white mb-4">
+<div class="size-6 flex items-center justify-center bg-primary rounded">
+<span class="material-symbols-outlined text-sm">account_balance</span>
+</div>
+<h2 class="text-lg font-bold">さくら行政書士事務所</h2>
+</div>
+<p class="text-sm">〒330-0854 埼玉県さいたま市大宮区桜木町X-X-X</p>
+<p class="text-sm mt-1">Email: info@sakura-gyosei.jp</p>
+</div>
+<nav class="flex flex-wrap gap-8 text-sm">
+<a class="hover:text-white transition-colors" href="#">プライバシーポリシー</a>
+<a class="hover:text-white transition-colors" href="#">サイトマップ</a>
+<a class="hover:text-white transition-colors" href="#">利用規約</a>
+</nav>
+</div>
+<div class="pt-8 border-t border-slate-800">
+<p class="text-xs">© 2026 さくら行政書士事務所 All Rights Reserved.</p>
+</div>
+</div>
+</footer>
+<!-- Floating CTA Button -->
+<div class="fixed bottom-6 right-6 z-[60] flex flex-col gap-3 items-end">
+<a class="w-36 bg-primary text-white py-3 rounded-full shadow-2xl hover:scale-105 transition-transform flex items-center justify-center gap-2 border border-[#AFAFAF]" href="tel:048-***-****">
+<span class="material-symbols-outlined text-xl">call</span>
+<span class="font-bold text-sm">電話相談</span>
+</a>
+<a class="w-36 bg-[#25D366] text-white py-3 rounded-full shadow-2xl hover:scale-105 transition-transform flex items-center justify-center gap-2 border border-[#AFAFAF]" href="#">
+<span class="material-symbols-outlined text-xl">chat</span>
+<span class="font-bold text-sm">LINE相談</span>
+</a>
+<a class="w-36 bg-white text-primary py-3 rounded-full shadow-2xl hover:scale-105 transition-transform flex items-center justify-center gap-2 border border-[#AFAFAF]" href="../_2/code.html#contact">
+<span class="material-symbols-outlined text-xl">mail</span>
+<span class="font-bold text-sm">メール相談</span>
+</a>
+</div>
+</div>
+</body></html>
