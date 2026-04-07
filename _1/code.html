@@ -1,44 +1,67 @@
 <!DOCTYPE html>
-
 <html lang="ja"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="description" content="さくら行政書士事務所の建設業許可申請サービスと料金案内。新規許可110,000円〜、更新55,000円〜。明瞭な料金体系で安心。"/>
+<meta property="og:title" content="サービス・料金案内 | さくら行政書士事務所"/>
+<meta property="og:description" content="建設業許可の新規申請・更新・経審の料金一覧。年間サポートプランもご用意。"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://sakura-gyosei.jp/pricing"/>
+<link rel="canonical" href="https://sakura-gyosei.jp/pricing"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Public+Sans:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#1a1a5b",
-                        "background-light": "#f6f6f8",
-                        "background-dark": "#13131f",
-                    },
-                    fontFamily: {
-                        "display": ["Public Sans", "sans-serif"]
-                    },
-                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
-                },
+tailwind.config = {
+    darkMode: "class",
+    theme: {
+        extend: {
+            colors: {
+                "primary": "#1e2a78",
+                "accent": "#f59e0b",
+                "background-light": "#f6f6f8",
+                "background-dark": "#13131f",
             },
-        }
-    </script>
+            fontFamily: {
+                "display": ["Noto Sans JP", "Public Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "full": "9999px"},
+        },
+    },
+}
+</script>
 <title>サービス・料金案内 | さくら行政書士事務所</title>
+<style>
+html { scroll-behavior: smooth; }
+.fade-up { opacity: 0; transform: translateY(32px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.fade-up.visible { opacity: 1; transform: translateY(0); }
+.fade-in { opacity: 0; transition: opacity 0.7s ease; }
+.fade-in.visible { opacity: 1; }
+#mobile-menu { transform: translateX(100%); transition: transform 0.3s ease; }
+#mobile-menu.open { transform: translateX(0); }
+.floating-cta { transition: transform 0.3s ease, opacity 0.3s ease; }
+.floating-cta.hidden-cta { transform: translateY(100px); opacity: 0; pointer-events: none; }
+@keyframes pulse-badge { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+.pulse-badge { animation: pulse-badge 2s ease-in-out infinite; }
+.faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.3s ease; }
+.faq-answer.open { max-height: 500px; }
+.faq-chevron { transition: transform 0.3s ease; }
+.faq-chevron.open { transform: rotate(180deg); }
+</style>
 </head>
 <body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
 <!-- Floating CTA -->
-<div class="fixed bottom-6 right-6 z-[60] flex flex-col gap-3 items-end">
-<a class="w-36 flex items-center justify-center gap-2 bg-white text-primary py-3 rounded-full shadow-2xl hover:scale-105 transition-transform font-bold border border-[#AFAFAF]" href="tel:048-***-****">
+<div id="floating-cta" class="floating-cta fixed bottom-6 right-6 z-[60] flex flex-col gap-3 items-end">
+<a class="w-36 flex items-center justify-center gap-2 bg-white text-primary py-3 rounded-full shadow-2xl hover:scale-105 transition-transform font-bold border border-slate-200" href="tel:048-***-****">
 <span class="material-symbols-outlined text-xl">call</span>
 <span class="text-sm">電話で相談</span>
 </a>
-<a class="w-36 flex items-center justify-center gap-2 bg-green-600 text-white py-3 rounded-full shadow-2xl hover:scale-105 transition-transform font-bold border border-[#AFAFAF]" href="#">
-<span class="material-symbols-outlined text-xl">chat</span>
+<a class="w-36 flex items-center justify-center gap-2 bg-[#06C755] text-white py-3 rounded-full shadow-2xl hover:scale-105 transition-transform font-bold" href="#">
+<svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
 <span class="text-sm">LINEで相談</span>
 </a>
-<a class="w-36 flex items-center justify-center gap-2 bg-primary text-white py-3 rounded-full shadow-2xl hover:scale-105 transition-transform font-bold border border-[#AFAFAF]" href="../_2/code.html#contact">
+<a class="w-36 flex items-center justify-center gap-2 bg-primary text-white py-3 rounded-full shadow-2xl hover:scale-105 transition-transform font-bold" href="../_2/code.html#contact">
 <span class="material-symbols-outlined text-xl">mail</span>
 <span class="text-sm">メールで相談</span>
 </a>
@@ -59,28 +82,54 @@
 </a>
 <a class="bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-lg text-sm font-bold transition-all shadow-sm" href="../_2/code.html#contact">無料相談</a>
 </nav>
+<button id="hamburger-btn" class="md:hidden p-2 text-slate-700 dark:text-slate-300" aria-label="メニューを開く">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
 </header>
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="fixed inset-0 z-[200] bg-white dark:bg-background-dark flex flex-col">
+<div class="flex items-center justify-between px-4 py-3 border-b border-primary/10">
+<div class="flex items-center gap-3">
+<div class="size-8 flex items-center justify-center bg-primary text-white rounded-lg">
+<span class="material-symbols-outlined text-2xl">account_balance</span>
+</div>
+<h2 class="text-primary dark:text-slate-100 font-bold" style="font-size: 1.35rem;">さくら行政書士事務所</h2>
+</div>
+<button id="mobile-menu-close" class="p-2 text-slate-700 dark:text-slate-300" aria-label="メニューを閉じる">
+<span class="material-symbols-outlined text-3xl">close</span>
+</button>
+</div>
+<nav class="flex flex-col gap-2 p-6">
+<a class="text-slate-700 dark:text-slate-300 text-lg font-medium py-3 border-b border-primary/10" href="../home/code.html">トップページ</a>
+<a class="text-slate-700 dark:text-slate-300 text-lg font-medium py-3 border-b border-primary/10" href="../_2/code.html">事務所概要・代表プロフィール</a>
+<a class="text-primary dark:text-white text-lg font-bold py-3 border-b border-primary/10" href="#">料金案内</a>
+<a class="flex items-center gap-2 text-primary dark:text-slate-200 text-lg font-bold py-3 border-b border-primary/10" href="tel:048-***-****">
+<span class="material-symbols-outlined">call</span>048-***-****
+</a>
+<a class="bg-primary text-white text-center py-4 rounded-xl text-lg font-bold mt-4" href="../_2/code.html#contact">無料相談・お問い合わせ</a>
+</nav>
+</div>
 <main class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 pb-32">
 <!-- Hero Section -->
-<section class="mb-16">
+<section class="mb-16 fade-up">
 <div class="flex flex-col gap-4">
 <span class="inline-block px-3 py-1 text-xs font-bold uppercase tracking-wider text-primary bg-primary/10 rounded-full w-fit">サービス・料金案内</span>
 <h2 class="text-4xl font-black leading-tight tracking-tight sm:text-5xl">
-                    建設業許可 <br class="hidden sm:block"/> サービス・料金案内
-                </h2>
+建設業許可 <br class="hidden sm:block"/> サービス・料金案内
+</h2>
 <p class="max-w-2xl text-lg text-slate-600 dark:text-slate-400">
-                    確実な許可取得から維持管理まで、専門の行政書士が伴走します。明瞭な料金体系で、お客様の円滑な事業運営をサポートいたします。
-                </p>
+確実な許可取得から維持管理まで、専門の行政書士が伴走します。明瞭な料金体系で、お客様の円滑な事業運営をサポートいたします。
+</p>
 </div>
 </section>
-<!-- Pricing Table -->
-<section class="mb-20">
+<!-- Pricing Table with Stripe -->
+<section class="mb-20 fade-up">
 <div class="mb-8 flex items-end justify-between">
 <div>
 <h3 class="text-2xl font-bold flex items-center gap-2">
 <span class="material-symbols-outlined text-primary">payments</span>
-                        標準報酬額一覧
-                    </h3>
+標準報酬額一覧
+</h3>
 <p class="text-sm text-slate-500 mt-1">※表示価格は税込価格です。実費（登録免許税、証紙代等）は別途必要となります。</p>
 </div>
 </div>
@@ -95,7 +144,7 @@
 </tr>
 </thead>
 <tbody class="divide-y divide-primary/5 dark:divide-slate-800">
-<tr class="hover:bg-primary/5 transition-colors">
+<tr class="hover:bg-primary/5 transition-colors bg-white dark:bg-slate-900">
 <td class="px-6 py-5">
 <div class="font-bold">新規許可申請</div>
 <div class="text-xs text-slate-400">初めて許可を取得する場合</div>
@@ -103,7 +152,7 @@
 <td class="px-6 py-5 text-lg font-bold text-primary dark:text-slate-100">110,000円〜</td>
 <td class="px-6 py-5 text-sm text-slate-600 dark:text-slate-400">知事・一般の場合。大臣許可は別途見積。</td>
 </tr>
-<tr class="hover:bg-primary/5 transition-colors">
+<tr class="hover:bg-primary/5 transition-colors bg-primary/[0.02] dark:bg-slate-800/50">
 <td class="px-6 py-5">
 <div class="font-bold">更新許可申請</div>
 <div class="text-xs text-slate-400">5年ごとの有効期限更新</div>
@@ -111,7 +160,7 @@
 <td class="px-6 py-5 text-lg font-bold text-primary dark:text-slate-100">55,000円〜</td>
 <td class="px-6 py-5 text-sm text-slate-600 dark:text-slate-400">変更事項がない場合の基本料金。</td>
 </tr>
-<tr class="hover:bg-primary/5 transition-colors">
+<tr class="hover:bg-primary/5 transition-colors bg-white dark:bg-slate-900">
 <td class="px-6 py-5">
 <div class="font-bold">業種追加申請</div>
 <div class="text-xs text-slate-400">許可を受けている業種を増やす場合</div>
@@ -119,7 +168,7 @@
 <td class="px-6 py-5 text-lg font-bold text-primary dark:text-slate-100">44,000円〜</td>
 <td class="px-6 py-5 text-sm text-slate-600 dark:text-slate-400">他業種との同時申請で割引あり。</td>
 </tr>
-<tr class="hover:bg-primary/5 transition-colors">
+<tr class="hover:bg-primary/5 transition-colors bg-primary/[0.02] dark:bg-slate-800/50">
 <td class="px-6 py-5">
 <div class="font-bold">決算変更届（事業年度終了届）</div>
 <div class="text-xs text-slate-400">毎年の事業報告</div>
@@ -133,31 +182,26 @@
 </div>
 </section>
 <!-- Application Flow Diagram -->
-<section class="mb-20">
+<section class="mb-20 fade-up">
 <h3 class="text-2xl font-bold mb-10 text-center">申請完了までの流れ</h3>
 <div class="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
-<!-- Connectors for Desktop -->
 <div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-primary/10 -translate-y-1/2 -z-10"></div>
-<!-- Step 1 -->
-<div class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-primary/10 shadow-sm flex flex-col items-center text-center">
+<div class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-primary/10 shadow-sm flex flex-col items-center text-center fade-up" style="transition-delay: 0ms;">
 <div class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold mb-4">1</div>
 <div class="font-bold mb-2">無料相談・診断</div>
 <p class="text-xs text-slate-500">要件を満たしているか無料で診断いたします。</p>
 </div>
-<!-- Step 2 -->
-<div class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-primary/10 shadow-sm flex flex-col items-center text-center">
+<div class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-primary/10 shadow-sm flex flex-col items-center text-center fade-up" style="transition-delay: 100ms;">
 <div class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold mb-4">2</div>
 <div class="font-bold mb-2">書類作成・収集</div>
 <p class="text-xs text-slate-500">必要書類の収集および申請書類の作成を代行します。</p>
 </div>
-<!-- Step 3 -->
-<div class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-primary/10 shadow-sm flex flex-col items-center text-center">
+<div class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-primary/10 shadow-sm flex flex-col items-center text-center fade-up" style="transition-delay: 200ms;">
 <div class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold mb-4">3</div>
 <div class="font-bold mb-2">申請・審査</div>
 <p class="text-xs text-slate-500">役所への申請。審査期間は約1ヶ月〜2ヶ月程度です。</p>
 </div>
-<!-- Step 4 -->
-<div class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-primary/10 shadow-sm flex flex-col items-center text-center">
+<div class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-primary/10 shadow-sm flex flex-col items-center text-center fade-up" style="transition-delay: 300ms;">
 <div class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold mb-4">4</div>
 <div class="font-bold mb-2">許可取得</div>
 <p class="text-xs text-slate-500">許可証が交付されます。その後の維持管理もお任せください。</p>
@@ -165,27 +209,26 @@
 </div>
 </section>
 <!-- Annual Support Plan -->
-<section class="mb-20">
+<section class="mb-20 fade-up">
 <div class="rounded-2xl bg-primary p-8 md:p-12 text-white overflow-hidden relative">
-<!-- Abstract Pattern background -->
 <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.1) 1px, transparent 0); background-size: 24px 24px;"></div>
 <div class="relative z-10 grid md:grid-cols-2 gap-12 items-center">
 <div>
-<span class="inline-block px-3 py-1 text-xs font-bold uppercase tracking-wider text-white bg-white/20 rounded-full mb-4">おすすめ</span>
+<span class="pulse-badge inline-block px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-white bg-accent rounded-full mb-4">おすすめ</span>
 <h3 class="text-3xl font-black mb-6">建設業許可 維持・管理<br/>年間サポートプラン</h3>
 <p class="text-white/80 mb-8 leading-relaxed">
-                            許可を取得して終わりではありません。毎年の決算報告、5年ごとの更新、変更届の提出など、建設業許可の維持には継続的な管理が不可欠です。「年間サポートプラン」なら、期限管理から実務まですべてプロにお任せいただけます。
-                        </p>
+許可を取得して終わりではありません。毎年の決算報告、5年ごとの更新、変更届の提出など、建設業許可の維持には継続的な管理が不可欠です。「年間サポートプラン」なら、期限管理から実務まですべてプロにお任せいただけます。
+</p>
 <div class="flex flex-wrap gap-4">
-<div class="flex items-center gap-2 bg-white/10 px-4 py-2 rounded">
+<div class="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-lg">
 <span class="material-symbols-outlined text-sm">check_circle</span>
 <span class="text-sm font-medium">期限切れ防止</span>
 </div>
-<div class="flex items-center gap-2 bg-white/10 px-4 py-2 rounded">
+<div class="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-lg">
 <span class="material-symbols-outlined text-sm">check_circle</span>
 <span class="text-sm font-medium">優先相談対応</span>
 </div>
-<div class="flex items-center gap-2 bg-white/10 px-4 py-2 rounded">
+<div class="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-lg">
 <span class="material-symbols-outlined text-sm">check_circle</span>
 <span class="text-sm font-medium">書類保管代行</span>
 </div>
@@ -210,62 +253,77 @@
 <span class="text-sm">軽微な変更届（住所等）の無料作成</span>
 </li>
 </ul>
-<button class="w-full bg-primary py-4 rounded font-black text-white hover:opacity-90 transition-opacity">
-                            プランの詳細を聞く
-                        </button>
+<a href="../_2/code.html#contact" class="block w-full bg-primary py-4 rounded-lg font-black text-white text-center hover:opacity-90 transition-opacity">
+プランの詳細を聞く
+</a>
 </div>
 </div>
 </div>
 </section>
-<!-- FAQ -->
-<section class="mb-20">
+<!-- FAQ Accordion -->
+<section class="mb-20 fade-up">
 <div class="max-w-3xl mx-auto">
 <h3 class="text-2xl font-bold mb-10 text-center">よくあるご質問 (FAQ)</h3>
-<div class="space-y-6">
-<div class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-primary/10 shadow-sm">
-<h4 class="font-bold text-lg mb-3 flex items-start gap-3">
+<div class="space-y-4" id="faq-container">
+<div class="faq-item bg-white dark:bg-slate-900 rounded-xl border border-primary/10 shadow-sm overflow-hidden">
+<button class="faq-toggle w-full px-6 py-5 flex items-center justify-between text-left" aria-expanded="false">
+<h4 class="font-bold text-lg flex items-start gap-3">
 <span class="text-primary">Q.</span>
-                            建設業許可の更新手続きはいつから始めるべきですか？
-                        </h4>
-<p class="text-slate-600 dark:text-slate-400 pl-8 border-l-2 border-primary/20">
-                            建設業許可の更新申請は、有効期間が満了する日の3ヶ月前から30日前まで（自治体により異なります）に行う必要があります。書類の準備に時間がかかる場合があるため、有効期限の半年前から準備を始めるのが理想的です。
-                        </p>
+建設業許可の更新手続きはいつから始めるべきですか？
+</h4>
+<span class="material-symbols-outlined faq-chevron text-primary flex-shrink-0 ml-4">expand_more</span>
+</button>
+<div class="faq-answer px-6">
+<p class="text-slate-600 dark:text-slate-400 pl-8 border-l-2 border-primary/20 pb-6">
+建設業許可の更新申請は、有効期間が満了する日の3ヶ月前から30日前まで（自治体により異なります）に行う必要があります。書類の準備に時間がかかる場合があるため、有効期限の半年前から準備を始めるのが理想的です。
+</p>
 </div>
-<div class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-primary/10 shadow-sm">
-<h4 class="font-bold text-lg mb-3 flex items-start gap-3">
-<span class="text-primary">Q.</span>
-                            決算変更届を忘れてしまった場合、どうすればいいですか？
-                        </h4>
-<p class="text-slate-600 dark:text-slate-400 pl-8 border-l-2 border-primary/20">
-                            速やかに提出する必要があります。決算変更届が提出されていないと、5年ごとの更新申請が受理されません。また、最悪の場合、許可の取消しや罰則の対象となる可能性もあります。当事務所では過去分の遡り提出もサポートしています。
-                        </p>
 </div>
-<div class="bg-white dark:bg-slate-900 p-6 rounded-xl border border-primary/10 shadow-sm">
-<h4 class="font-bold text-lg mb-3 flex items-start gap-3">
+<div class="faq-item bg-white dark:bg-slate-900 rounded-xl border border-primary/10 shadow-sm overflow-hidden">
+<button class="faq-toggle w-full px-6 py-5 flex items-center justify-between text-left" aria-expanded="false">
+<h4 class="font-bold text-lg flex items-start gap-3">
 <span class="text-primary">Q.</span>
-                            個人事業主から法人化した場合、許可はどうなりますか？
-                        </h4>
-<p class="text-slate-600 dark:text-slate-400 pl-8 border-l-2 border-primary/20">
-                            個人から法人へ許可を引き継ぐことは原則できません。新たに法人として「新規許可（許可換え新規）」の申請を行う必要があります。これを「法人成（ほうじんなり）」と呼びますが、要件の確認が複雑になるため、事前の相談をお勧めします。
-                        </p>
+決算変更届を忘れてしまった場合、どうすればいいですか？
+</h4>
+<span class="material-symbols-outlined faq-chevron text-primary flex-shrink-0 ml-4">expand_more</span>
+</button>
+<div class="faq-answer px-6">
+<p class="text-slate-600 dark:text-slate-400 pl-8 border-l-2 border-primary/20 pb-6">
+速やかに提出する必要があります。決算変更届が提出されていないと、5年ごとの更新申請が受理されません。また、最悪の場合、許可の取消しや罰則の対象となる可能性もあります。当事務所では過去分の遡り提出もサポートしています。
+</p>
+</div>
+</div>
+<div class="faq-item bg-white dark:bg-slate-900 rounded-xl border border-primary/10 shadow-sm overflow-hidden">
+<button class="faq-toggle w-full px-6 py-5 flex items-center justify-between text-left" aria-expanded="false">
+<h4 class="font-bold text-lg flex items-start gap-3">
+<span class="text-primary">Q.</span>
+個人事業主から法人化した場合、許可はどうなりますか？
+</h4>
+<span class="material-symbols-outlined faq-chevron text-primary flex-shrink-0 ml-4">expand_more</span>
+</button>
+<div class="faq-answer px-6">
+<p class="text-slate-600 dark:text-slate-400 pl-8 border-l-2 border-primary/20 pb-6">
+個人から法人へ許可を引き継ぐことは原則できません。新たに法人として「新規許可（許可換え新規）」の申請を行う必要があります。これを「法人成（ほうじんなり）」と呼びますが、要件の確認が複雑になるため、事前の相談をお勧めします。
+</p>
+</div>
 </div>
 </div>
 </div>
 </section>
 <!-- CTA Section -->
-<section>
+<section class="fade-up">
 <div class="bg-slate-100 dark:bg-slate-800 rounded-2xl p-8 text-center border border-primary/5">
 <h3 class="text-2xl font-bold mb-4">お見積もり・初回相談は無料です</h3>
 <p class="text-slate-600 dark:text-slate-400 mb-8">お客様の状況に合わせた最適なプランをご提案します。お気軽にお問い合わせください。</p>
 <div class="flex flex-col sm:flex-row justify-center gap-4">
-<a class="flex items-center justify-center gap-2 bg-white text-primary px-8 py-4 rounded font-bold hover:bg-primary/5 transition-all border border-[#AFAFAF]" href="tel:048-***-****">
+<a class="flex items-center justify-center gap-2 bg-white text-primary px-8 py-4 rounded-lg font-bold hover:bg-primary/5 transition-all border border-slate-200" href="tel:048-***-****">
 <span class="material-symbols-outlined">call</span>
-                        048-***-****
-                    </a>
-<a class="flex items-center justify-center gap-2 bg-primary text-white px-8 py-4 rounded font-bold hover:bg-primary/90 transition-all" href="../_2/code.html#contact">
+048-***-****
+</a>
+<a class="flex items-center justify-center gap-2 bg-primary text-white px-8 py-4 rounded-lg font-bold hover:bg-primary/90 transition-all" href="../_2/code.html#contact">
 <span class="material-symbols-outlined">mail</span>
-                        メールで問い合わせ
-                    </a>
+メールで問い合わせ
+</a>
 </div>
 </div>
 </section>
@@ -294,4 +352,56 @@
 </div>
 </div>
 </footer>
+<script>
+// IntersectionObserver for animations
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+}, { threshold: 0.15 });
+document.querySelectorAll('.fade-up, .fade-in').forEach(el => observer.observe(el));
+
+// Mobile menu
+const hamburgerBtn = document.getElementById('hamburger-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+const mobileMenuClose = document.getElementById('mobile-menu-close');
+hamburgerBtn.addEventListener('click', () => mobileMenu.classList.add('open'));
+mobileMenuClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
+mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => mobileMenu.classList.remove('open'));
+});
+
+// FAQ Accordion
+document.querySelectorAll('.faq-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const answer = item.querySelector('.faq-answer');
+        const chevron = item.querySelector('.faq-chevron');
+        const isOpen = answer.classList.contains('open');
+        // Close all
+        document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+        document.querySelectorAll('.faq-chevron').forEach(c => c.classList.remove('open'));
+        document.querySelectorAll('.faq-toggle').forEach(t => t.setAttribute('aria-expanded', 'false'));
+        // Open clicked if it was closed
+        if (!isOpen) {
+            answer.classList.add('open');
+            chevron.classList.add('open');
+            btn.setAttribute('aria-expanded', 'true');
+        }
+    });
+});
+
+// Floating CTA scroll direction
+let lastScrollY = window.scrollY;
+const floatingCta = document.getElementById('floating-cta');
+window.addEventListener('scroll', () => {
+    const currentScrollY = window.scrollY;
+    if (currentScrollY > lastScrollY && currentScrollY > 300) {
+        floatingCta.classList.add('hidden-cta');
+    } else {
+        floatingCta.classList.remove('hidden-cta');
+    }
+    lastScrollY = currentScrollY;
+});
+</script>
 </body></html>

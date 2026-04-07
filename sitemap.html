@@ -2,8 +2,14 @@
 <html lang="ja"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="description" content="さくら行政書士事務所のサイトマップ。各ページへのリンク一覧。"/>
+<meta property="og:title" content="サイトマップ | さくら行政書士事務所"/>
+<meta property="og:description" content="さくら行政書士事務所ウェブサイトの全ページ一覧。"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://sakura-gyosei.jp/sitemap"/>
+<link rel="canonical" href="https://sakura-gyosei.jp/sitemap"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Public+Sans:wght@400;500;700;900&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
@@ -12,62 +18,96 @@ tailwind.config = {
     theme: {
         extend: {
             colors: {
-                "primary": "#1a1a5b",
+                "primary": "#1e2a78",
+                "accent": "#f59e0b",
                 "background-light": "#f6f6f8",
                 "background-dark": "#13131f",
             },
-            fontFamily: { "display": ["Public Sans", "sans-serif"] },
-            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+            fontFamily: { "display": ["Noto Sans JP", "Public Sans", "sans-serif"] },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "full": "9999px"},
         },
     },
 }
 </script>
 <title>サイトマップ | さくら行政書士事務所</title>
+<style>
+html { scroll-behavior: smooth; }
+.fade-up { opacity: 0; transform: translateY(32px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.fade-up.visible { opacity: 1; transform: translateY(0); }
+#mobile-menu { transform: translateX(100%); transition: transform 0.3s ease; }
+#mobile-menu.open { transform: translateX(0); }
+</style>
 </head>
-<body class="bg-background-light font-display text-slate-900">
-<header class="sticky top-0 z-50 w-full bg-background-light/90 backdrop-blur-md border-b border-primary/10 px-4 md:px-10 lg:px-40 py-3 flex items-center justify-between">
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<header class="sticky top-0 z-50 w-full bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-primary/10 px-4 md:px-10 lg:px-40 py-3 flex items-center justify-between">
 <div class="flex items-center gap-3">
 <div class="size-8 flex items-center justify-center bg-primary text-white rounded-lg">
 <span class="material-symbols-outlined text-2xl">account_balance</span>
 </div>
-<h2 class="text-primary font-bold leading-tight tracking-tight" style="font-size: 1.35rem;">さくら行政書士事務所</h2>
+<h2 class="text-primary dark:text-slate-100 font-bold leading-tight tracking-tight" style="font-size: 1.35rem;">さくら行政書士事務所</h2>
 </div>
 <nav class="hidden md:flex items-center gap-8">
-<a class="text-slate-700 text-sm font-medium hover:text-primary transition-colors" href="home/code.html">トップページ</a>
-<a class="text-slate-700 text-sm font-medium hover:text-primary transition-colors" href="_2/code.html">事務所概要・代表プロフィール</a>
-<a class="text-slate-700 text-sm font-medium hover:text-primary transition-colors" href="_1/code.html">料金案内</a>
-<a class="flex items-center gap-1.5 text-primary font-bold hover:underline" href="tel:048-***-****" style="font-size: 1.3rem;">
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="home/code.html">トップページ</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="_2/code.html">事務所概要・代表プロフィール</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="_1/code.html">料金案内</a>
+<a class="flex items-center gap-1.5 text-primary dark:text-slate-200 font-bold hover:underline" href="tel:048-***-****" style="font-size: 1.3rem;">
 <span class="material-symbols-outlined text-2xl">call</span>048-***-****
 </a>
 <a class="bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-lg text-sm font-bold transition-all shadow-sm" href="_2/code.html#contact">無料相談</a>
 </nav>
+<button id="hamburger-btn" class="md:hidden p-2 text-slate-700 dark:text-slate-300" aria-label="メニューを開く">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
 </header>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="fixed inset-0 z-[200] bg-white dark:bg-background-dark flex flex-col">
+<div class="flex items-center justify-between px-4 py-3 border-b border-primary/10">
+<div class="flex items-center gap-3">
+<div class="size-8 flex items-center justify-center bg-primary text-white rounded-lg">
+<span class="material-symbols-outlined text-2xl">account_balance</span>
+</div>
+<h2 class="text-primary dark:text-slate-100 font-bold" style="font-size: 1.35rem;">さくら行政書士事務所</h2>
+</div>
+<button id="mobile-menu-close" class="p-2 text-slate-700 dark:text-slate-300" aria-label="メニューを閉じる">
+<span class="material-symbols-outlined text-3xl">close</span>
+</button>
+</div>
+<nav class="flex flex-col gap-2 p-6">
+<a class="text-slate-700 dark:text-slate-300 text-lg font-medium py-3 border-b border-primary/10" href="home/code.html">トップページ</a>
+<a class="text-slate-700 dark:text-slate-300 text-lg font-medium py-3 border-b border-primary/10" href="_2/code.html">事務所概要・代表プロフィール</a>
+<a class="text-slate-700 dark:text-slate-300 text-lg font-medium py-3 border-b border-primary/10" href="_1/code.html">料金案内</a>
+<a class="flex items-center gap-2 text-primary dark:text-slate-200 text-lg font-bold py-3 border-b border-primary/10" href="tel:048-***-****">
+<span class="material-symbols-outlined">call</span>048-***-****
+</a>
+<a class="bg-primary text-white text-center py-4 rounded-xl text-lg font-bold mt-4" href="_2/code.html#contact">無料相談・お問い合わせ</a>
+</nav>
+</div>
 <main class="max-w-3xl mx-auto px-4 py-16">
-<h1 class="text-3xl font-black text-primary mb-8">サイトマップ</h1>
+<h1 class="text-3xl font-black text-primary dark:text-slate-100 mb-8 fade-up">サイトマップ</h1>
 <div class="space-y-8">
-<section>
-<h2 class="text-lg font-bold text-slate-900 border-l-4 border-primary pl-4 mb-4">メインページ</h2>
+<section class="fade-up" style="transition-delay: 50ms;">
+<h2 class="text-lg font-bold text-slate-900 dark:text-white border-l-4 border-primary pl-4 mb-4">メインページ</h2>
 <ul class="space-y-3 pl-4">
-<li><a class="flex items-center gap-2 text-primary hover:underline font-medium" href="home/code.html"><span class="material-symbols-outlined text-sm">chevron_right</span>トップページ</a></li>
-<li><a class="flex items-center gap-2 text-primary hover:underline font-medium" href="_2/code.html"><span class="material-symbols-outlined text-sm">chevron_right</span>事務所概要・代表プロフィール</a></li>
-<li><a class="flex items-center gap-2 text-primary hover:underline font-medium" href="_1/code.html"><span class="material-symbols-outlined text-sm">chevron_right</span>サービス・料金案内</a></li>
-<li><a class="flex items-center gap-2 text-primary hover:underline font-medium" href="_2/code.html#contact"><span class="material-symbols-outlined text-sm">chevron_right</span>お問い合わせ</a></li>
+<li><a class="flex items-center gap-2 text-primary dark:text-blue-300 hover:underline font-medium" href="home/code.html"><span class="material-symbols-outlined text-sm">chevron_right</span>トップページ</a></li>
+<li><a class="flex items-center gap-2 text-primary dark:text-blue-300 hover:underline font-medium" href="_2/code.html"><span class="material-symbols-outlined text-sm">chevron_right</span>事務所概要・代表プロフィール</a></li>
+<li><a class="flex items-center gap-2 text-primary dark:text-blue-300 hover:underline font-medium" href="_1/code.html"><span class="material-symbols-outlined text-sm">chevron_right</span>サービス・料金案内</a></li>
+<li><a class="flex items-center gap-2 text-primary dark:text-blue-300 hover:underline font-medium" href="_2/code.html#contact"><span class="material-symbols-outlined text-sm">chevron_right</span>お問い合わせ</a></li>
 </ul>
 </section>
-<section>
-<h2 class="text-lg font-bold text-slate-900 border-l-4 border-primary pl-4 mb-4">サービス内容</h2>
+<section class="fade-up" style="transition-delay: 100ms;">
+<h2 class="text-lg font-bold text-slate-900 dark:text-white border-l-4 border-primary pl-4 mb-4">サービス内容</h2>
 <ul class="space-y-3 pl-4">
-<li><a class="flex items-center gap-2 text-primary hover:underline font-medium" href="_1/code.html"><span class="material-symbols-outlined text-sm">chevron_right</span>新規許可申請</a></li>
-<li><a class="flex items-center gap-2 text-primary hover:underline font-medium" href="_1/code.html"><span class="material-symbols-outlined text-sm">chevron_right</span>更新・業種追加</a></li>
-<li><a class="flex items-center gap-2 text-primary hover:underline font-medium" href="_1/code.html"><span class="material-symbols-outlined text-sm">chevron_right</span>経営事項審査</a></li>
-<li><a class="flex items-center gap-2 text-primary hover:underline font-medium" href="_1/code.html"><span class="material-symbols-outlined text-sm">chevron_right</span>年間サポートプラン</a></li>
+<li><a class="flex items-center gap-2 text-primary dark:text-blue-300 hover:underline font-medium" href="_1/code.html"><span class="material-symbols-outlined text-sm">chevron_right</span>新規許可申請</a></li>
+<li><a class="flex items-center gap-2 text-primary dark:text-blue-300 hover:underline font-medium" href="_1/code.html"><span class="material-symbols-outlined text-sm">chevron_right</span>更新・業種追加</a></li>
+<li><a class="flex items-center gap-2 text-primary dark:text-blue-300 hover:underline font-medium" href="_1/code.html"><span class="material-symbols-outlined text-sm">chevron_right</span>経営事項審査</a></li>
+<li><a class="flex items-center gap-2 text-primary dark:text-blue-300 hover:underline font-medium" href="_1/code.html"><span class="material-symbols-outlined text-sm">chevron_right</span>年間サポートプラン</a></li>
 </ul>
 </section>
-<section>
-<h2 class="text-lg font-bold text-slate-900 border-l-4 border-primary pl-4 mb-4">その他</h2>
+<section class="fade-up" style="transition-delay: 150ms;">
+<h2 class="text-lg font-bold text-slate-900 dark:text-white border-l-4 border-primary pl-4 mb-4">その他</h2>
 <ul class="space-y-3 pl-4">
-<li><a class="flex items-center gap-2 text-primary hover:underline font-medium" href="privacy.html"><span class="material-symbols-outlined text-sm">chevron_right</span>プライバシーポリシー</a></li>
-<li><a class="flex items-center gap-2 text-primary hover:underline font-medium" href="terms.html"><span class="material-symbols-outlined text-sm">chevron_right</span>利用規約</a></li>
+<li><a class="flex items-center gap-2 text-primary dark:text-blue-300 hover:underline font-medium" href="privacy.html"><span class="material-symbols-outlined text-sm">chevron_right</span>プライバシーポリシー</a></li>
+<li><a class="flex items-center gap-2 text-primary dark:text-blue-300 hover:underline font-medium" href="terms.html"><span class="material-symbols-outlined text-sm">chevron_right</span>利用規約</a></li>
 </ul>
 </section>
 </div>
@@ -96,4 +136,16 @@ tailwind.config = {
 </div>
 </div>
 </footer>
+<script>
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+}, { threshold: 0.15 });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+const hamburgerBtn = document.getElementById('hamburger-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+const mobileMenuClose = document.getElementById('mobile-menu-close');
+hamburgerBtn.addEventListener('click', () => mobileMenu.classList.add('open'));
+mobileMenuClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
+mobileMenu.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => mobileMenu.classList.remove('open')); });
+</script>
 </body></html>
